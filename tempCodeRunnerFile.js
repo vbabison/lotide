@@ -1,1 +1,1 @@
-JSON.stringify(
+console.log(words)
