@@ -7,16 +7,16 @@ const assertEqual = function(actual, expected) {
 };
 
 const findKeyByValue = function(object, value) {
-  let keys = ""
+  let keys = "";
   for (const element in object) {
     if (object[element] === value) {
-      keys = element
-      break
+      keys = element;
+      break;
     } else {
-      keys = undefined
+      keys = undefined;
     }
   }
-  return keys
+  return keys;
 };
 
 const bestTVShowsByGenre = {

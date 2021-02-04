@@ -2,7 +2,7 @@ const letterPositions = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
     if (sentence[i] === " ") {
-      continue
+      continue;
     } else if (results[sentence[i]]) {
       results[sentence[i]].push(i);
     } else {
@@ -11,7 +11,7 @@ const letterPositions = function(sentence) {
   }
   return results;
 };
-console.log("Your Answer", letterPositions("lighthouse in the house"))
+console.log("Your Answer", letterPositions("lighthouse in the house"));
 const eqArrays = function(arr1, arr2) {
   let fakeValue = true;
   arr1.forEach((e1) => arr2.forEach((e2) =>{
