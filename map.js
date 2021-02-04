@@ -40,8 +40,8 @@ const results1 = map(words, word => word[0]);
 console.log(results1);
 
 //results1 comparison
-assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ])
+assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
 //map comparison with default parameter
-assertArraysEqual(map(words), [ 'g', 'c', 't', 'm', 't' ])
+assertArraysEqual(map(words), [ 'g', 'c', 't', 'm', 't' ]);
 //map comparison
-assertArraysEqual(map(words, word => word[0]), [ 'g', 'c', 't', 'm', 't' ])
+assertArraysEqual(map(words, word => word[0]), [ 'g', 'c', 't', 'm', 't' ]);
