@@ -11,26 +11,5 @@ const letterPositions = function(sentence) {
   }
   return results;
 };
-console.log("Your Answer", letterPositions("lighthouse in the house"));
-const eqArrays = function(arr1, arr2) {
-  let fakeValue = true;
-  arr1.forEach((e1) => arr2.forEach((e2) =>{
-    if (e1 === e2) {
-      fakeValue = true;
-    } else {
-      fakeValue = false;
-    }
-  }));
-  return fakeValue;
-};
 
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
-
-
-assertArraysEqual(letterPositions("hello").e, [1]);
+module.exports = letterPositions;
